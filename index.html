@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDEs - Legislação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="all_content">
+        <img src="assets/logo-unifap-1.png" alt="logo unifap" width="150" height="50">
+        <h1 class="Titulo">Série de TDEs Informática e Legislação</h1>
+
+        <div class="info">
+            <h2 class="Disciplina">Disciplina: Informática e Legislação</h2>
+            <h2 class="Professor">Professor: Ramon Felizardo</h2>
+            <h2>Equipe:</h2>
+            <div class="alunos">
+                <ul>
+                    <li><h3>Guilherme Cardoso</h3></li>
+                    <li><h3>Kael Bezerra Brito Mendes</h3></li>
+                    <li><h3>Maria Iara Soares Braga</h3></li>
+                    <li><h3>Pedro Henrique Crispim Lacerda</h3></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sumário">
+            <button class="TDE1" onclick="showTDE('tde1_content', this)">TDE1</button>
+            <button class="TDE2" disabled>TDE2</button>
+            <button class="TDE3" disabled>TDE3</button>
+            <button class="TDE4" disabled>TDE4</button>
+        </div>
+
+        <div class="tde1_content" style="display:none;">
+            <div class="intro_tde1">
+                <img class="ilustração_tde1" src="assets/ODATA-Conectividade-1110x390.jpg" alt="logo unifap" width="900" height="195">
+                <h1 class="tde1_title">Responsabilidade Civil dos Provedores de Internet </h1>
+            </div>
+            <h2 class="tde1_Introdução">1.Introdução</h2>
+                <p>O presente trabalho tem como objetivo apresentar os conceitos fundamentais relacionados à responsabilidade civil de provedores de internet, destacando sua relevância no cenário jurídico e tecnológico atual. A popularização da internet transformou a forma como pessoas e empresas se comunicam, consomem conteúdos e realizam negócios, tornando essencial compreender os limites e deveres dos provedores diante de eventuais danos causados por terceiros em suas plataformas.</p>
+                <p>Ressalta-se a importância do Marco Civil da Internet no ordenamento jurídico brasileiro, especialmente no que diz respeito à proteção de direitos, <span>à regulação de condutas online e à definição de responsabilidades em casos de conteúdos ilícitos</span>. Dessa forma, busca-se esclarecer em que situações os provedores podem ou não ser responsabilizados, contribuindo para uma compreensão mais ampla dos direitos e deveres no ambiente digital.</p>
+
+            <h2 class="tde1_Desenvolvimento">2.Desenvolvimento</h2>
+                <h3>2.1 Conceitos Fundamentais</h3>
+                    <p>A legislação brasileira, principalmente o Marco Civil da Internet (Lei nº 12.965/2014), define dois tipos de provedores: o provedor de conexão (empresa que fornece acesso à internet) e o provedor de aplicações (quem oferece serviços online, como sites e redes sociais).</p>
+
+                    <ul>
+                        <li><p>A lei não responsabiliza os provedores de conexão pelo conteúdo acessado pelos usuários, apenas pela falha na prestação do serviço.</p></li>
+                        <li><p>Já os provedores de aplicações são responsáveis pelo conteúdo de terceiros, mas apenas se não cumprirem uma ordem judicial para remover o material ilícito.</p></li> 
+                    </ul>
+                
+                <h3>2.2 Principais Críticas</h3>
+                    <p>Uma das principais críticas ao regime de responsabilidade civil dos provedores de internet pelo Marco Civil da Internet é a exigência de ordem judicial específica para a responsabilização dos provedores de aplicação, que pode representar uma barreira ou uma demora para a proteção dos direitos fundamentais dos usuários e das vítimas de ilícitos na rede. Muitos defendem que os provedores de aplicação deveriam adotar mecanismos de autorregulação, de mediação ou de arbitragem, para resolver os conflitos de forma mais rápida, eficiente e participativa, sem a necessidade de intervenção judicial.</p>
+                    <p>Outra crítica é a isenção de responsabilidade dos provedores de conexão, que pode gerar uma sensação de impunidade ou de desincentivo à prevenção e à repressão dos ilícitos na rede. Alguns argumentam que os provedores de conexão deveriam ter um papel mais ativo e colaborativo na fiscalização e na remoção dos conteúdos ilícitos, mediante o uso de filtros, bloqueios ou outras medidas técnicas, que garantam a segurança e a integridade da rede.</p>
+                
+                <h3>2.3 Exemplos e Aplicações</h3>
+                    <ul>
+                        <li><p>Vazamentos de dados pessoais</p></li>
+                        <li><p>Um provedor de hospedagem ou aplicação sofre ataque hacker e deixa expostos dados de usuários.</p></li>
+                        <li><p>Aplicação da regra: Além do Marco Civil, a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018) prevê responsabilidade em casos de falha na proteção de dados.</p></li>
+                        <li><p>Utilidade: Reforça a importância da segurança da informação e da proteção da privacidade.</p></li>
+                    </ul>
+                <h3>2.4 Desafios e Perspectivas Futuras</h3>
+                    <p>Equilíbrio entre liberdade de expressão e proteção de direitos: a remoção de conteúdos precisa evitar censura prévia, mas também garantir reparação rápida às vítimas.</p>
+                    <p>Dificuldade técnica: o grande volume de dados e postagens torna inviável a verificação prévia de todo conteúdo.</p>
+                    <p>Combate às fake news e discurso de ódio: falta de regulamentação específica para definir responsabilidades em situações de desinformação em massa.</p>
+                    <p>Responsabilidade internacional: provedores estrangeiros atuam no Brasil, o que gera conflitos de jurisdição.</p>
+                <h2 class="tde_1Conclusão">3.Conclusão</h2>
+                <div class="conclusion_tde1">
+                    <p>O estudo da responsabilidade civil dos provedores de internet evidencia a complexidade do tema, que envolve a conciliação entre liberdade de expressão, privacidade, segurança e proteção de direitos. O Marco Civil da Internet estabelece um regime diferenciado ao condicionar a responsabilização, em regra, ao descumprimento de ordem judicial, especialmente para os provedores de aplicação, enquanto provedores de conexão não respondem por conteúdos de terceiros. A análise dos conceitos, características, exemplos práticos e desafios futuros mostrou que, embora o modelo atual busque equilibrar direitos fundamentais e segurança jurídica, ainda existem controvérsias e perspectivas de evolução diante de novas tecnologias, como a inteligência artificial e o combate às fake news, exigindo constante atualização legislativa e reflexão crítica sobre os limites da atuação dos provedores. </p>
+                    <img src="assets/provedor-acesso-internet.jpg" alt="provedor de internet" width="400" height="400">
+                </div>
+            <h2 class="tde1_Referências">4.Referências</h2>
+                    <div class="tde1_links">
+                        <a href="https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/cdc-na-visao-do-tjdft-1/o-consumidor-na-internet/responsabilidade-do-provedor-pelo-conteudo-publicado-nas-redes-sociais">Responsabilidade do provedor pelo conteúdo publicado em redes sociais, Tribunal de Justiça do Distrito Federal e dos Territórios</a>
+                        <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm#:~:text=fundamentada%20em%20contr%C3%A1rio.-,Par%C3%A1grafo%20%C3%BAnico.,legitimidade%20para%20apresenta%C3%A7%C3%A3o%20do%20pedido.">L12965</a>
+                        <a href="https://www.jusbrasil.com.br/artigos/a-responsabilidade-civil-dos-provedores-de-internet-pelos-danos-causados-por-terceiros/2162088472">A responsabilidade civil dos provedores de internet pelos danos causados por terceiros, JusBrasil</a>
+                    </div>
+        </div>
+    </div>
+    <script>
+        function showTDE(contentClass, btn) {
+            var selected = document.querySelector('.' + contentClass);
+            if (!selected) return;
+            // Toggle visibility
+            if (selected.style.display === 'block') {
+                selected.style.display = 'none';
+                btn.classList.remove('selected');
+            } else {
+                selected.style.display = 'block';
+                // Remove selected from all buttons
+                document.querySelectorAll('.sumário button').forEach(function(b) {
+                    b.classList.remove('selected');
+                });
+                btn.classList.add('selected');
+            }
+        }
+    </script>
+</body>
+</html>

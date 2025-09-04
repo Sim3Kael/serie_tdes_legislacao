@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    color: #222;
+}
+
+.all_content {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 40px;
+}
+
+.Titulo{
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 18px;
+    color: #2a4d8f;
+}
+
+.info {
+    background: #eaf0fa;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+}
+
+.alunos h3 {
+    margin: 6px 0;
+    font-weight: 400;
+}
+
+.ilustração_tde1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sumário {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.sumário button {
+    background: #2a4d8f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.sumário button:hover {
+    background: #4f545e;
+    color: #fff;
+    box-shadow: 0 5px 16px rgba(42,77,143,0.10);
+}
+
+.sumário button.selected {
+    background: #1d3560;
+    box-shadow: 0 2px 8px rgba(42,77,143,0.10);
+}
+
+.sumário button:disabled {
+    background: #cfd8e3;
+    color: #888;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.tde1_content {
+    margin-top: 24px;
+}
+
+.tde1_title {
+    padding: 12px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a4d8f;
+    font-size: 2em;
+    margin-top:  10px;
+    margin-bottom: 10px;
+    background-color: #7da4ee;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tde1_title:hover{
+    background-color: #6b8edc;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(42,77,143,0.15);
+}
+
+.tde1_Introdução, .tde1_Desenvolvimento, .tde_1Conclusão, .tde1_Referências {
+    color: #1d3560;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+.tde1_content h3 {
+    color: #2a4d8f;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.tde1_content p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.tde1_content a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2a4d8f;
+    text-decoration: none;
+    margin-bottom: 8px;
+    background: #eaf0fa;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    margin: 4px 4px 0 0;
+    cursor: pointer;
+    font-size: 0.98em;
+    transition: background 0.2s;
+}
+
+.tde1_content a:hover {
+    background: #d0e0fa;
+}
+
+.conclusion_tde1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
