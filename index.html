@@ -1,100 +1,469 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TDEs - Legislação</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="all_content">
-        <img src="assets/logo-unifap-1.png" alt="logo unifap" width="150" height="50">
-        <h1 class="Titulo">Série de TDEs Informática e Legislação</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TDEs - Legislação</title>
+        <!-- Tailwind CSS CDN for TDE2 style -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
 
-        <div class="info">
-            <h2 class="Disciplina">Disciplina: Informática e Legislação</h2>
-            <h2 class="Professor">Professor: Ramon Felizardo</h2>
-            <h2>Equipe:</h2>
-            <div class="alunos">
-                <ul>
-                    <li><h3>Guilherme Cardoso</h3></li>
-                    <li><h3>Kael Bezerra Brito Mendes</h3></li>
-                    <li><h3>Maria Iara Soares Braga</h3></li>
-                    <li><h3>Pedro Henrique Crispim Lacerda</h3></li>
-                </ul>
+    </head>
+    <body class="flex items-center justify-center min-h-screen p-4 sm:p-8">
+        <div class="all_content">
+            <img
+                src="assets/logo-unifap-1.png"
+                alt="logo unifap"
+                width="150"
+                height="50"
+            />
+            <h1 class="Titulo">Série de TDEs Informática e Legislação</h1>
+            <div class="info">
+                <h2 class="Disciplina">Disciplina: Informática e Legislação</h2>
+                <h2 class="Professor">Professor: Ramon Felizardo</h2>
+                <h2>Equipe:</h2>
+                <div class="alunos">
+                    <ul>
+                        <li><h3>Guilherme Cardoso</h3></li>
+                        <li><h3>Kael Bezerra Brito Mendes</h3></li>
+                        <li><h3>Maria Iara Soares Braga</h3></li>
+                        <li><h3>Pedro Henrique Crispim Lacerda</h3></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="sumário">
-            <button class="TDE1" onclick="showTDE('tde1_content', this)">TDE1</button>
-            <button class="TDE2" disabled>TDE2</button>
-            <button class="TDE3" disabled>TDE3</button>
-            <button class="TDE4" disabled>TDE4</button>
-        </div>
-
-        <div class="tde1_content" style="display:none;">
-            <div class="intro_tde1">
-                <img class="ilustração_tde1" src="assets/ODATA-Conectividade-1110x390.jpg" alt="logo unifap" width="900" height="195">
-                <h1 class="tde1_title">Responsabilidade Civil dos Provedores de Internet </h1>
+            <div class="sumário">
+                <button class="TDE1" onclick="showTDE('tde1_content', this)">
+                    TDE1
+                </button>
+                <button class="TDE2" onclick="showTDE('tde2_content', this)">TDE2</button>
+                <button class="TDE3" disabled>TDE3</button>
+                <button class="TDE4" disabled>TDE4</button>
             </div>
-            <h2 class="tde1_Introdução">1.Introdução</h2>
-                <p>O presente trabalho tem como objetivo apresentar os conceitos fundamentais relacionados à responsabilidade civil de provedores de internet, destacando sua relevância no cenário jurídico e tecnológico atual. A popularização da internet transformou a forma como pessoas e empresas se comunicam, consomem conteúdos e realizam negócios, tornando essencial compreender os limites e deveres dos provedores diante de eventuais danos causados por terceiros em suas plataformas.</p>
-                <p>Ressalta-se a importância do Marco Civil da Internet no ordenamento jurídico brasileiro, especialmente no que diz respeito à proteção de direitos, <span>à regulação de condutas online e à definição de responsabilidades em casos de conteúdos ilícitos</span>. Dessa forma, busca-se esclarecer em que situações os provedores podem ou não ser responsabilizados, contribuindo para uma compreensão mais ampla dos direitos e deveres no ambiente digital.</p>
 
-            <h2 class="tde1_Desenvolvimento">2.Desenvolvimento</h2>
+            <!-- TDE1 content -->
+            <div class="tde1_content">
+                <div class="intro_tde1">
+                    <img
+                        class="ilustração_tde1"
+                        src="assets/ODATA-Conectividade-1110x390.jpg"
+                        alt="logo unifap"
+                        width="900"
+                        height="195"
+                    />
+                    <h1 class="tde1_title">
+                        Responsabilidade Civil dos Provedores de Internet
+                    </h1>
+                </div>
+                <h2 class="tde1_Introdução">1.Introdução</h2>
+                <p>
+                    O presente trabalho tem como objetivo apresentar os
+                    conceitos fundamentais relacionados à responsabilidade civil
+                    de provedores de internet, destacando sua relevância no
+                    cenário jurídico e tecnológico atual. A popularização da
+                    internet transformou a forma como pessoas e empresas se
+                    comunicam, consomem conteúdos e realizam negócios, tornando
+                    essencial compreender os limites e deveres dos provedores
+                    diante de eventuais danos causados por terceiros em suas
+                    plataformas.
+                </p>
+                <p>
+                    Ressalta-se a importância do Marco Civil da Internet no
+                    ordenamento jurídico brasileiro, especialmente no que diz
+                    respeito à proteção de direitos,
+                    <span
+                        >à regulação de condutas online e à definição de
+                        responsabilidades em casos de conteúdos ilícitos</span
+                    >. Dessa forma, busca-se esclarecer em que situações os
+                    provedores podem ou não ser responsabilizados, contribuindo
+                    para uma compreensão mais ampla dos direitos e deveres no
+                    ambiente digital.
+                </p>
+
+                <h2 class="tde1_Desenvolvimento">2.Desenvolvimento</h2>
                 <h3>2.1 Conceitos Fundamentais</h3>
-                    <p>A legislação brasileira, principalmente o Marco Civil da Internet (Lei nº 12.965/2014), define dois tipos de provedores: o provedor de conexão (empresa que fornece acesso à internet) e o provedor de aplicações (quem oferece serviços online, como sites e redes sociais).</p>
+                <p>
+                    A legislação brasileira, principalmente o Marco Civil da
+                    Internet (Lei nº 12.965/2014), define dois tipos de
+                    provedores: o provedor de conexão (empresa que fornece
+                    acesso à internet) e o provedor de aplicações (quem oferece
+                    serviços online, como sites e redes sociais).
+                </p>
 
-                    <ul>
-                        <li><p>A lei não responsabiliza os provedores de conexão pelo conteúdo acessado pelos usuários, apenas pela falha na prestação do serviço.</p></li>
-                        <li><p>Já os provedores de aplicações são responsáveis pelo conteúdo de terceiros, mas apenas se não cumprirem uma ordem judicial para remover o material ilícito.</p></li> 
-                    </ul>
-                
+                <ul>
+                    <li>
+                        <p>
+                            A lei não responsabiliza os provedores de conexão
+                            pelo conteúdo acessado pelos usuários, apenas pela
+                            falha na prestação do serviço.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Já os provedores de aplicações são responsáveis pelo
+                            conteúdo de terceiros, mas apenas se não cumprirem
+                            uma ordem judicial para remover o material ilícito.
+                        </p>
+                    </li>
+                </ul>
+
                 <h3>2.2 Principais Críticas</h3>
-                    <p>Uma das principais críticas ao regime de responsabilidade civil dos provedores de internet pelo Marco Civil da Internet é a exigência de ordem judicial específica para a responsabilização dos provedores de aplicação, que pode representar uma barreira ou uma demora para a proteção dos direitos fundamentais dos usuários e das vítimas de ilícitos na rede. Muitos defendem que os provedores de aplicação deveriam adotar mecanismos de autorregulação, de mediação ou de arbitragem, para resolver os conflitos de forma mais rápida, eficiente e participativa, sem a necessidade de intervenção judicial.</p>
-                    <p>Outra crítica é a isenção de responsabilidade dos provedores de conexão, que pode gerar uma sensação de impunidade ou de desincentivo à prevenção e à repressão dos ilícitos na rede. Alguns argumentam que os provedores de conexão deveriam ter um papel mais ativo e colaborativo na fiscalização e na remoção dos conteúdos ilícitos, mediante o uso de filtros, bloqueios ou outras medidas técnicas, que garantam a segurança e a integridade da rede.</p>
-                
+                <p>
+                    Uma das principais críticas ao regime de responsabilidade
+                    civil dos provedores de internet pelo Marco Civil da
+                    Internet é a exigência de ordem judicial específica para a
+                    responsabilização dos provedores de aplicação, que pode
+                    representar uma barreira ou uma demora para a proteção dos
+                    direitos fundamentais dos usuários e das vítimas de ilícitos
+                    na rede. Muitos defendem que os provedores de aplicação
+                    deveriam adotar mecanismos de autorregulação, de mediação ou
+                    de arbitragem, para resolver os conflitos de forma mais
+                    rápida, eficiente e participativa, sem a necessidade de
+                    intervenção judicial.
+                </p>
+                <p>
+                    Outra crítica é a isenção de responsabilidade dos provedores
+                    de conexão, que pode gerar uma sensação de impunidade ou de
+                    desincentivo à prevenção e à repressão dos ilícitos na rede.
+                    Alguns argumentam que os provedores de conexão deveriam ter
+                    um papel mais ativo e colaborativo na fiscalização e na
+                    remoção dos conteúdos ilícitos, mediante o uso de filtros,
+                    bloqueios ou outras medidas técnicas, que garantam a
+                    segurança e a integridade da rede.
+                </p>
+
                 <h3>2.3 Exemplos e Aplicações</h3>
-                    <ul>
-                        <li><p>Vazamentos de dados pessoais</p></li>
-                        <li><p>Um provedor de hospedagem ou aplicação sofre ataque hacker e deixa expostos dados de usuários.</p></li>
-                        <li><p>Aplicação da regra: Além do Marco Civil, a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018) prevê responsabilidade em casos de falha na proteção de dados.</p></li>
-                        <li><p>Utilidade: Reforça a importância da segurança da informação e da proteção da privacidade.</p></li>
-                    </ul>
+                <ul>
+                    <li><p>Vazamentos de dados pessoais</p></li>
+                    <li>
+                        <p>
+                            Um provedor de hospedagem ou aplicação sofre ataque
+                            hacker e deixa expostos dados de usuários.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Aplicação da regra: Além do Marco Civil, a Lei Geral
+                            de Proteção de Dados (LGPD – Lei nº 13.709/2018)
+                            prevê responsabilidade em casos de falha na proteção
+                            de dados.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Utilidade: Reforça a importância da segurança da
+                            informação e da proteção da privacidade.
+                        </p>
+                    </li>
+                </ul>
                 <h3>2.4 Desafios e Perspectivas Futuras</h3>
-                    <p>Equilíbrio entre liberdade de expressão e proteção de direitos: a remoção de conteúdos precisa evitar censura prévia, mas também garantir reparação rápida às vítimas.</p>
-                    <p>Dificuldade técnica: o grande volume de dados e postagens torna inviável a verificação prévia de todo conteúdo.</p>
-                    <p>Combate às fake news e discurso de ódio: falta de regulamentação específica para definir responsabilidades em situações de desinformação em massa.</p>
-                    <p>Responsabilidade internacional: provedores estrangeiros atuam no Brasil, o que gera conflitos de jurisdição.</p>
+                <p>
+                    Equilíbrio entre liberdade de expressão e proteção de
+                    direitos: a remoção de conteúdos precisa evitar censura
+                    prévia, mas também garantir reparação rápida às vítimas.
+                </p>
+                <p>
+                    Dificuldade técnica: o grande volume de dados e postagens
+                    torna inviável a verificação prévia de todo conteúdo.
+                </p>
+                <p>
+                    Combate às fake news e discurso de ódio: falta de
+                    regulamentação específica para definir responsabilidades em
+                    situações de desinformação em massa.
+                </p>
+                <p>
+                    Responsabilidade internacional: provedores estrangeiros
+                    atuam no Brasil, o que gera conflitos de jurisdição.
+                </p>
                 <h2 class="tde_1Conclusão">3.Conclusão</h2>
                 <div class="conclusion_tde1">
-                    <p>O estudo da responsabilidade civil dos provedores de internet evidencia a complexidade do tema, que envolve a conciliação entre liberdade de expressão, privacidade, segurança e proteção de direitos. O Marco Civil da Internet estabelece um regime diferenciado ao condicionar a responsabilização, em regra, ao descumprimento de ordem judicial, especialmente para os provedores de aplicação, enquanto provedores de conexão não respondem por conteúdos de terceiros. A análise dos conceitos, características, exemplos práticos e desafios futuros mostrou que, embora o modelo atual busque equilibrar direitos fundamentais e segurança jurídica, ainda existem controvérsias e perspectivas de evolução diante de novas tecnologias, como a inteligência artificial e o combate às fake news, exigindo constante atualização legislativa e reflexão crítica sobre os limites da atuação dos provedores. </p>
-                    <img src="assets/provedor-acesso-internet.jpg" alt="provedor de internet" width="400" height="400">
+                    <p>
+                        O estudo da responsabilidade civil dos provedores de
+                        internet evidencia a complexidade do tema, que envolve a
+                        conciliação entre liberdade de expressão, privacidade,
+                        segurança e proteção de direitos. O Marco Civil da
+                        Internet estabelece um regime diferenciado ao
+                        condicionar a responsabilização, em regra, ao
+                        descumprimento de ordem judicial, especialmente para os
+                        provedores de aplicação, enquanto provedores de conexão
+                        não respondem por conteúdos de terceiros. A análise dos
+                        conceitos, características, exemplos práticos e desafios
+                        futuros mostrou que, embora o modelo atual busque
+                        equilibrar direitos fundamentais e segurança jurídica,
+                        ainda existem controvérsias e perspectivas de evolução
+                        diante de novas tecnologias, como a inteligência
+                        artificial e o combate às fake news, exigindo constante
+                        atualização legislativa e reflexão crítica sobre os
+                        limites da atuação dos provedores.
+                    </p>
+                    <img
+                        src="assets/provedor-acesso-internet.jpg"
+                        alt="provedor de internet"
+                        width="400"
+                        height="400"
+                    />
                 </div>
-            <h2 class="tde1_Referências">4.Referências</h2>
-                    <div class="tde1_links">
-                        <a href="https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/cdc-na-visao-do-tjdft-1/o-consumidor-na-internet/responsabilidade-do-provedor-pelo-conteudo-publicado-nas-redes-sociais">Responsabilidade do provedor pelo conteúdo publicado em redes sociais, Tribunal de Justiça do Distrito Federal e dos Territórios</a>
-                        <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm#:~:text=fundamentada%20em%20contr%C3%A1rio.-,Par%C3%A1grafo%20%C3%BAnico.,legitimidade%20para%20apresenta%C3%A7%C3%A3o%20do%20pedido.">L12965</a>
-                        <a href="https://www.jusbrasil.com.br/artigos/a-responsabilidade-civil-dos-provedores-de-internet-pelos-danos-causados-por-terceiros/2162088472">A responsabilidade civil dos provedores de internet pelos danos causados por terceiros, JusBrasil</a>
-                    </div>
+                <h2 class="tde1_Referências">4.Referências</h2>
+                <div class="tde1_links">
+                    <a
+                        href="https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/cdc-na-visao-do-tjdft-1/o-consumidor-na-internet/responsabilidade-do-provedor-pelo-conteudo-publicado-nas-redes-sociais"
+                        >Responsabilidade do provedor pelo conteúdo publicado em
+                        redes sociais, Tribunal de Justiça do Distrito Federal e
+                        dos Territórios</a
+                    >
+                    <a
+                        href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm#:~:text=fundamentada%20em%20contr%C3%A1rio.-,Par%C3%A1grafo%20%C3%BAnico.,legitimidade%20para%20apresenta%C3%A7%C3%A3o%20do%20pedido."
+                        >L12965</a
+                    >
+                    <a
+                        href="https://www.jusbrasil.com.br/artigos/a-responsabilidade-civil-dos-provedores-de-internet-pelos-danos-causados-por-terceiros/2162088472"
+                        >A responsabilidade civil dos provedores de internet
+                        pelos danos causados por terceiros, JusBrasil</a
+                    >
+                </div>
+            </div>
+
+            <!-- TDE2 content merged from TDE2.html -->
+            <div class="tde2_content">
+                <div class="container-infographic shadow-2xl rounded-3xl p-6 sm:p-10 lg:p-16 mx-auto">
+                    <!-- Título Principal do TDE2 -->
+                    <header class="text-center mb-12 animated-text transition-transform duration-300 section-hover">
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-teal-400 leading-tight tracking-wider">
+                            Marco Legal da Inteligência Artificial no Brasil
+                        </h1>
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-sky-400 mt-2">
+                            Análise e Resumo Autoral - TDE2
+                        </h2>
+                        <p class="mt-4 text-sm sm:text-base text-gray-400 max-w-3xl mx-auto">
+                            Este portfólio digital apresenta uma análise aprofundada da PL 21/2020, cumprindo os critérios de excelência do trabalho acadêmico.
+                        </p>
+                    </header>
+                    <!-- Seção 1: O que é a PL 21/2020? (Contextualização) -->
+                    <section class="bg-blue-900 border-l-4 border-teal-400 rounded-r-3xl p-6 mb-12 shadow-lg animated-text transition-transform duration-300 section-hover">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="icon-container">
+                                <svg class="h-12 w-12 text-teal-400 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L12 14.75m0-5.5L9.75 7m2.25 2.25v5.5m0-5.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5m0 3c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5m-5.25-1.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm14.25-2.25a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM7.5 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm1.5-2.25a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-bold text-sky-400">
+                                O Que é a PL 21/2020?
+                            </h3>
+                        </div>
+                        <ul class="list-disc list-inside text-base sm:text-lg text-gray-300 leading-relaxed space-y-2">
+                            <li>Proposta: Busca estabelecer um "Marco Legal" para a Inteligência Artificial no Brasil.</li>
+                            <li>Objetivo: Promover um ambiente jurídico seguro para o desenvolvimento da IA, priorizando princípios éticos e protegendo os direitos fundamentais dos cidadãos.</li>
+                            <li>Origem: Proposta pelo jurista Ricardo Villas Bôas Cueva, é o resultado de um amplo diálogo social, buscando um equilíbrio entre inovação e segurança jurídica.</li>
+                        </ul>
+                    </section>
+                    <div class="my-10 tech-divider"></div>
+                    <!-- Seção 2: Resumo Autoral (Síntese Crítica) -->
+                    <section class="bg-gray-800 rounded-3xl p-6 mb-12 shadow-lg animated-text transition-transform duration-300 section-hover">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-orange-400 text-center mb-6">
+                            Análise Crítica e Posicionamento do Grupo
+                        </h3>
+                        <ul class="list-none space-y-6">
+                            <li class="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                                <span class="text-4xl text-green-400 flex-shrink-0">✅</span>
+                                <div>
+                                    <h4 class="font-bold text-xl sm:text-2xl text-green-400">Pontos Fortes</h4>
+                                    <ul class="list-disc list-inside text-base text-gray-300 space-y-1 mt-2">
+                                        <li>Soberania Nacional: Reconhece a IA como um tema de soberania e estratégia de Estado, crucial para o desenvolvimento autônomo do país.</li>
+                                        <li>Abordagem de Risco: Prioriza a regulamentação de sistemas de IA de "alto risco" que possam causar dano significativo, evitando burocracia desnecessária para tecnologias de menor impacto.</li>
+                                        <li>Sandbox Regulatório: Prevê a criação de um ambiente de testes controlado, ideal para incentivar a inovação em startups e projetos de pesquisa.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                                <span class="text-4xl text-red-400 flex-shrink-0">⚠️</span>
+                                <div>
+                                    <h4 class="font-bold text-xl sm:text-2xl text-red-400">Desafios e Debates</h4>
+                                    <ul class="list-disc list-inside text-base text-gray-300 space-y-1 mt-2">
+                                        <li>Definição de "Alto Risco": A falta de clareza nas categorias pode gerar insegurança jurídica e dificultar a inovação.</li>
+                                        <li>Autoridade Reguladora: A discussão sobre a competência e o papel da autoridade fiscalizadora, como a ANPD, é um ponto-chave para a eficácia da lei.</li>
+                                        <li>Equilíbrio na Legislação: O grande desafio é criar um texto que seja flexível o suficiente para acompanhar a rápida evolução tecnológica sem perder sua robustez.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                                <span class="text-4xl text-yellow-400 flex-shrink-0">🎯</span>
+                                <div>
+                                    <h4 class="font-bold text-xl sm:text-2xl text-yellow-400">Posicionamento do Grupo</h4>
+                                    <p class="text-base text-gray-300 mt-2">
+                                        Nossa posição é que a PL é um excelente ponto de partida. Ela demonstra a preocupação do Brasil em regular a IA, mas necessita de aprimoramentos. Defendemos o diálogo contínuo entre legisladores, o setor de tecnologia e a sociedade para garantir uma lei que seja justa, flexível e adaptável.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <div class="my-10 tech-divider"></div>
+                    <!-- Seção 3: Metodologia de Pesquisa -->
+                    <section class="text-center mb-12 animated-text transition-transform duration-300 section-hover">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-cyan-400 mb-8">
+                            Metodologia de Pesquisa
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Fontes Primárias -->
+                            <div class="bg-cyan-900 rounded-2xl p-6 shadow-md transition-transform transform hover:scale-105">
+                                <div class="text-4xl mb-4 text-cyan-400 icon-container">
+                                    <svg class="h-12 w-12 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m-5 3h4M17 21H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-bold text-xl sm:text-2xl text-cyan-400">Fontes Primárias</h4>
+                                <ul class="list-disc list-inside text-sm text-gray-300 space-y-2 text-left">
+                                    <li>Texto integral da PL 21/2020 e suas emendas.</li>
+                                    <li>Relatórios de comissões e documentos oficiais.</li>
+                                    <li>Transcrições de debates e audiências públicas.</li>
+                                </ul>
+                            </div>
+                            <!-- Fontes Secundárias -->
+                            <div class="bg-cyan-900 rounded-2xl p-6 shadow-md transition-transform transform hover:scale-105">
+                                <div class="text-4xl mb-4 text-cyan-400 icon-container">
+                                    <svg class="h-12 w-12 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.467 9.249 4.793 7.5 5.253M12 6.253C13.168 5.467 14.751 4.793 16.5 5.253m-4.5 0a2.253 2.253 0 00-2.25-2.25c-.933 0-1.78.337-2.38 1.047M12 6.253a2.253 2.253 0 012.25-2.25c.933 0 1.78.337 2.38 1.047M7.5 5.253v13m9-13v13m-9 0a2.253 2.253 0 002.25 2.25c.933 0 1.78-.337 2.38-1.047M7.5 18.253a2.253 2.253 0 01-2.25-2.25c0-.933.337-1.78 1.047-2.38M16.5 18.253a2.253 2.253 0 002.25-2.25c0-.933-.337-1.78-1.047-2.38m-3.999-5.176l-.001.001z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-bold text-xl sm:text-2xl text-cyan-400">Fontes Secundárias</h4>
+                                <ul class="list-disc list-inside text-sm text-gray-300 space-y-2 text-left">
+                                    <li>Artigos acadêmicos sobre IA e legislação.</li>
+                                    <li>Notícias e análises de veículos de imprensa confiáveis.</li>
+                                    <li>Relatórios de entidades de tecnologia e ética digital.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="my-10 tech-divider"></div>
+                    <!-- Seção 4: Infográfico Destaques -->
+                    <section class="mb-12 animated-text transition-transform duration-300 section-hover">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-fuchsia-400 text-center mb-8">
+                            Destaques da PL 21/2020
+                        </h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Princípios Norteadores -->
+                            <div class="bg-fuchsia-900 rounded-2xl p-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                                <h4 class="text-xl sm:text-2xl font-bold text-fuchsia-400 mb-4">Princípios Norteadores</h4>
+                                <ul class="list-none space-y-4 text-gray-200">
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-fuchsia-400 flex-shrink-0">⚖️</span>
+                                        <div>
+                                            <h5 class="font-bold">Ética</h5>
+                                            <p class="text-sm">Sistemas justos e imparciais para evitar vieses discriminatórios.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-fuchsia-400 flex-shrink-0">🔍</span>
+                                        <div>
+                                            <h5 class="font-bold">Transparência e Explicabilidade</h5>
+                                            <p class="text-sm">Direito do cidadão de entender como as decisões de IA são tomadas.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-fuchsia-400 flex-shrink-0">🔒</span>
+                                        <div>
+                                            <h5 class="font-bold">Privacidade e Segurança</h5>
+                                            <p class="text-sm">Alinhamento estrito com a LGPD e proteção de dados pessoais.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-fuchsia-400 flex-shrink-0">🚨</span>
+                                        <div>
+                                            <h5 class="font-bold">Governança</h5>
+                                            <p class="text-sm">Estabelecimento de papéis e responsabilidades para quem usa e desenvolve IA.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Impactos e Desafios -->
+                            <div class="bg-rose-900 rounded-2xl p-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                                <h4 class="text-xl sm:text-2xl font-bold text-rose-400 mb-4">Impactos e Desafios</h4>
+                                <ul class="list-none space-y-4 text-gray-200">
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-rose-400 flex-shrink-0">⚙️</span>
+                                        <div>
+                                            <h5 class="font-bold">Sistemas de Alto Risco</h5>
+                                            <p class="text-sm">Criação de categorias para sistemas que podem causar dano significativo.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-rose-400 flex-shrink-0">📈</span>
+                                        <div>
+                                            <h5 class="font-bold">Incentivo à Inovação</h5>
+                                            <p class="text-sm">Busca de um equilíbrio para não sufocar o desenvolvimento do setor.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-rose-400 flex-shrink-0">🏛️</span>
+                                        <div>
+                                            <h5 class="font-bold">Autoridade Competente</h5>
+                                            <p class="text-sm">Debate sobre qual órgão será responsável por fiscalizar a lei.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <span class="text-2xl text-rose-400 flex-shrink-0">🧪</span>
+                                        <div>
+                                            <h5 class="font-bold">Sandbox Regulatório</h5>
+                                            <p class="text-sm">Permite que startups e empresas testem inovações em IA em ambiente controlado.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="my-10 tech-divider"></div>
+                    <!-- Seção 5: Conclusão -->
+                    <footer class="bg-gradient-to-r from-teal-600 to-sky-600 rounded-3xl p-6 text-center text-white shadow-xl mb-12 animated-text transition-transform duration-300 section-hover">
+                        <div class="text-5xl mb-4">
+                            <svg class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17.587A2.25 2.25 0 0012 19.5h0m0 0a2.25 2.25 0 002.337-1.913m-2.337 1.913V21m0-1.5a2.25 2.25 0 002.25-2.25V12h3M9.663 17.587A2.25 2.25 0 0112 15h0m0 0a2.25 2.25 0 012.337 1.913m-2.337-1.913V12m0 0a2.25 2.25 0 01-2.25-2.25V5h3m-3 7a2.25 2.25 0 01-2.25-2.25V5h3m-3 7a2.25 2.25 0 002.25-2.25V5h3m-3 7V12m0 0a2.25 2.25 0 012.25-2.25V5h3m-3 7V12m0 0a2.25 2.25 0 012.25-2.25V5h3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold">
+                            Conclusão: Um Futuro Regulamentado e Ético
+                        </h3>
+                        <p class="mt-2 text-sm sm:text-base max-w-2xl mx-auto">
+                            A PL 21/2020 é mais do que uma lei; é um convite ao debate sobre o tipo de sociedade que queremos construir. Ela representa um marco na discussão sobre a governança de IA no Brasil e reforça a necessidade de que a inovação e a proteção dos direitos caminhem lado a lado.
+                        </p>
+                    </footer>
+                    <div class="my-10 tech-divider"></div>
+                    <!-- Seção 6: Referências -->
+                    <section class="bg-gray-900 rounded-3xl p-6 shadow-inner animated-text transition-transform duration-300 section-hover">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-200 text-center mb-6">
+                            Referências
+                        </h3>
+                        <ul class="list-disc list-inside text-sm text-gray-400 space-y-2 max-w-2xl mx-auto">
+                            <li><a href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2247963" target="_blank" class="text-blue-400 hover:underline">PL 21/2020: Texto integral e tramitação no portal da Câmara dos Deputados.</a></li>
+                            <li><a href="https://itsrio.org/artigos/regulacao-da-ia-no-brasil-o-que-e-a-pl-21-2020-e-os-pontos-mais-polemicos/" target="_blank" class="text-blue-400 hover:underline">Análise Crítica: Artigo "Regulamentação da IA no Brasil: O que é a PL 21/2020 e os pontos mais polêmicos", do ITS Rio.</a></li>
+                            <li><a href="https://www1.folha.uol.com.br/tec/2021/09/o-que-esta-em-jogo-com-a-pl-2120-e-a-regulamentacao-de-ia-no-brasil.shtml" target="_blank" class="text-blue-400 hover:underline">Jornalismo: "O que está em jogo com a PL 21/20 e a regulamentação de IA no Brasil", por Folha de S.Paulo.</a></li>
+                            <li><a href="https://opiceblum.com.br/pl-21-2020-a-regulamentacao-da-ia-no-brasil/" target="_blank" class="text-blue-400 hover:underline">Visão Jurídica: "PL 21/2020: a regulamentação da IA no Brasil", por Opice Blum Advogados.</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </div>
-    </div>
-    <script>
-        function showTDE(contentClass, btn) {
-            var selected = document.querySelector('.' + contentClass);
-            if (!selected) return;
-            // Toggle visibility
-            if (selected.style.display === 'block') {
-                selected.style.display = 'none';
-                btn.classList.remove('selected');
-            } else {
-                selected.style.display = 'block';
-                // Remove selected from all buttons
-                document.querySelectorAll('.sumário button').forEach(function(b) {
-                    b.classList.remove('selected');
+        <script>
+            function showTDE(contentClass, btn) {
+                // Hide all TDE content divs
+                document.querySelectorAll('.tde1_content, .tde2_content').forEach(function (el) {
+                    el.style.display = 'none';
                 });
-                btn.classList.add('selected');
+                // Show the selected TDE content
+                var selected = document.querySelector("." + contentClass);
+                if (!selected) return;
+                selected.style.display = "block";
+                // Remove selected from all buttons
+                document
+                    .querySelectorAll(".sumário button")
+                    .forEach(function (b) {
+                        b.classList.remove("selected");
+                    });
+                btn.classList.add("selected");
             }
-        }
-    </script>
-</body>
+            // Optionally, show TDE1 by default if you want:
+            // document.querySelector('.tde1_content').style.display = 'block';
+            // document.querySelector('.TDE1').classList.add('selected');
+        </script>
+    </body>
 </html>
