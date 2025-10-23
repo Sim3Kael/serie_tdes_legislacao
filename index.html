@@ -35,11 +35,9 @@
                 </div>
             </div>
             <div class="sumário">
-                <button class="TDE1" onclick="showTDE('tde1_content', this)">
-                    TDE1
-                </button>
+                <button class="TDE1" onclick="showTDE('tde1_content', this)">TDE1</button>
                 <button class="TDE2" onclick="showTDE('tde2_content', this)">TDE2</button>
-                <button class="TDE3" disabled>TDE3</button>
+                <button class="TDE3" onclick="showTDE('tde3_content', this)">TDE3</button>
                 <button class="TDE4" disabled>TDE4</button>
             </div>
 
@@ -442,6 +440,125 @@
                     </section>
                 </div>
             </div>
+            <div class="tde3_content">
+                <div class="container-infographic shadow-2xl rounded-3xl p-6 sm:p-10 lg:p-16 mx-auto">
+                    <header class="text-center mb-12 animated-text transition-transform duration-300 section-hover">
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-teal-400 leading-tight tracking-wider">
+                            Clínica Licente Venos
+                        </h1>
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-sky-400 mt-2">
+                            Cartilha sobre LGPD - TDE3
+                        </h2>
+                        <p class="mt-4 text-sm sm:text-base text-gray-400 max-w-3xl mx-auto">
+                            Esta cartilha tem como objetivo apresentar como a Clínica Licente Venos pode se adequar à LGPD e assegurar que os dados de pacientes, funcionários e parceiros sejam tratados de forma ética e segura.
+                        </p>
+                    </header>
+
+                        <div>
+                                <h4 class="font-bold text-xl sm:text-2xl text-green-400">Cenário da Empresa Fictícia</h4>
+                                <ul class="list-disc list-inside text-base text-gray-300 space-y-1 mt-2">
+                                <li>Nome: Clínica Licente Venos</li>
+                                <li>Ramo de Atuação: Saúde — atendimentos clínicos e laboratoriais.</li>
+                                <ul class="list-disc list-inside text-base text-gray-300 space-y-1 space-x-4 mt-2">
+                                <li>Estrutura Organizacional:</li>
+                                    <li>Total de funcionários: 75</li>
+                                    <li>Recepcionistas: 10</li>
+                                    <li>Faxineiros: 15</li>
+                                    <li>Enfermeiros: 30</li>
+                                    <li>Médicos: 20</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    <!-- Tipos de Dados Coletados e Utilizados -->
+                    <section class="mt-10 bg-blue-900 border-l-4 border-teal-400 rounded-r-3xl p-6 mb-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-teal-300 mb-4">Tipos de Dados Coletados e Utilizados</h3>
+                        <div class="space-y-4 text-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-lg text-cyan-200">Dados pessoais</h4>
+                                <p class="text-sm">Nome completo, endereço, telefone, e-mail, CPF e RG dos pacientes e funcionários.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-cyan-200">Dados sensíveis</h4>
+                                <p class="text-sm">Informações sobre histórico médico, resultados de exames, alergias, uso de medicamentos e convênios de saúde.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-cyan-200">Dados digitais</h4>
+                                <p class="text-sm">Registros de agendamento, prontuários eletrônicos e histórico de atendimento.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Riscos e Problemas -->
+                    <section class="bg-gray-800 rounded-3xl p-6 mb-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-orange-300 mb-4">Riscos e Problemas Relacionados à Proteção de Dados</h3>
+                        <p class="text-gray-300 mb-3">A clínica enfrenta alguns riscos caso não haja um controle adequado sobre os dados:</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Vazamento de informações médicas por falhas de segurança digital.</li>
+                            <li>Acesso não autorizado de funcionários a dados de pacientes.</li>
+                            <li>Perda de dados devido à ausência de backups seguros.</li>
+                            <li>Uso indevido de informações pessoais para fins de marketing sem consentimento do titular.</li>
+                        </ul>
+                        <p class="text-gray-300 mt-4">Esses riscos podem resultar em danos à imagem da clínica, multas previstas pela LGPD e quebra de confiança com os pacientes.</p>
+                    </section>
+
+                    <!-- Proposta de Adequação à LGPD -->
+                    <section class="bg-fuchsia-900 rounded-3xl p-6 mb-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-fuchsia-300 mb-4">Proposta de Adequação à LGPD</h3>
+
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg text-fuchsia-200">4.1 Coleta e Armazenamento Seguro de Dados</h4>
+                            <ul class="list-disc list-inside text-gray-200 space-y-2 mt-2">
+                                <li>Implantação de sistemas criptografados para o armazenamento de prontuários e cadastros.</li>
+                                <li>Uso de senhas individuais e autenticação em dois fatores para acesso ao sistema.</li>
+                                <li>Restrição de acesso aos dados conforme o cargo e a função.</li>
+                                <li>Criação de backups automáticos e seguros em servidores protegidos.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg text-fuchsia-200">4.2 Políticas Internas</h4>
+                            <ul class="list-disc list-inside text-gray-200 space-y-2 mt-2">
+                                <li>Desenvolvimento de uma Política de Privacidade explicando de forma clara o uso, compartilhamento e armazenamento dos dados.</li>
+                                <li>Criação de um Manual de Boas Práticas de Proteção de Dados, acessível a todos os colaboradores.</li>
+                                <li>Nomeação de um Encarregado de Proteção de Dados (DPO) responsável por garantir o cumprimento da LGPD.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg text-fuchsia-200">4.3 Treinamento dos Funcionários</h4>
+                            <ul class="list-disc list-inside text-gray-200 space-y-2 mt-2">
+                                <li>Realização de palestras e treinamentos semestrais sobre a importância da proteção de dados.</li>
+                                <li>Simulações de situações de risco (como phishing ou vazamento) para conscientização da equipe.</li>
+                                <li>Criação de campanhas internas com lembretes sobre boas práticas de segurança digital.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-lg text-fuchsia-200">4.4 Medidas em Caso de Vazamento de Dados</h4>
+                            <ul class="list-disc list-inside text-gray-200 space-y-2 mt-2">
+                                <li>Notificação imediata à Autoridade Nacional de Proteção de Dados (ANPD) e aos titulares afetados.</li>
+                                <li>Adoção de um plano de contingência para mitigar os danos e corrigir falhas de segurança.</li>
+                                <li>Investigação interna para identificar a causa do incidente e reforçar as barreiras de proteção.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Conclusão -->
+                    <footer class="bg-gradient-to-r from-teal-600 to-sky-600 rounded-3xl p-6 text-center text-white shadow-xl">
+                        <h3 class="text-xl sm:text-2xl font-bold mb-2">Conclusão</h3>
+                        <p class="text-sm sm:text-base max-w-3xl mx-auto">
+                            Com a implementação das medidas propostas, a Clínica Licente Venos estará alinhada às exigências da LGPD, garantindo transparência, responsabilidade e segurança no tratamento dos dados pessoais.
+                        </p>
+                        <p class="text-sm sm:text-base max-w-3xl mx-auto mt-3">
+                            A adequação à lei não é apenas uma obrigação legal, mas também um compromisso ético com os pacientes e colaboradores, fortalecendo a confiança e a reputação da clínica no mercado da saúde.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+
+                </div>
+            </div>
+
         </div>
         <script>
             function showTDE(contentClass, btn) {
