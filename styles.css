@@ -1,213 +1,373 @@
            body {
-                margin: 0;
-                font-family: 'Space Mono', monospace;
-                background-color: #0d1117;
-                color: #f0f4f8;
-                overflow-x: hidden;
-                position: relative;
-            }
-            body::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: radial-gradient(circle, rgba(29, 78, 216, 0.1) 0%, transparent 70%),
-                            linear-gradient(135deg, rgba(14, 116, 144, 0.1) 0%, rgba(17, 24, 39, 0) 50%);
-                z-index: -1;
-                opacity: 0.5;
-                animation: pulse-bg 15s infinite ease-in-out;
-            }
-            @keyframes pulse-bg {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.1); }
-                100% { transform: scale(1); }
-            }
-            .container-infographic {
-                max-width: 1200px;
-                background-color: #111827;
-                border: 1px solid #1f2937;
-                transition: all 0.3s ease-in-out;
-            }
-            .container-infographic:hover {
-                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            }
-            .icon-container {
-                position: relative;
-                z-index: 10;
-            }
-            .icon {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #2e3a4e;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-                animation: float 6s ease-in-out infinite;
-            }
-            @keyframes float {
-                0% { transform: translateY(0px); }
-                50% { transform: translateY(-10px); }
-                100% { transform: translateY(0px); }
-            }
-            .animated-text {
-                animation: fadeIn 2s ease-in-out;
-            }
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(10px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-            .section-hover:hover {
-                transform: scale(1.03);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            }
-            .tech-divider {
-                height: 2px;
-                background: linear-gradient(90deg, #1f2937 0%, #34d399 50%, #1f2937 100%);
-                border-radius: 9999px;
-                animation: tech-pulse 3s infinite;
-            }
-            @keyframes tech-pulse {
-                0% { opacity: 0.5; }
-                50% { opacity: 1; }
-                100% { opacity: 0.5; }
-            }
-            /* Custom styles for first TDE content box */
-            .all_content {
-                max-width: 1200px;
-                margin: 40px auto;
-                background: #111827;
-                border-radius: 24px;
-                box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-                padding: 32px 40px;
-                border: 1px solid #222b3f;
-            }
-            .Titulo{
-                text-align: center;
-                font-size: 2.2em;
-                margin-bottom: 18px;
-                color: #34d399;
-                letter-spacing: 2px;
-                font-weight: bold;
-            }
-            .info {
-                background: linear-gradient(90deg, #172335 0%, #0f172a 40%, #172335 100%);
-                border-radius: 16px;
-                padding: 18px 24px;
-                margin-bottom: 28px;
-                color: #e0eafc;
-                box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-            }
-            .alunos h3 {
-                margin: 6px 0;
-                font-weight: 400;
-                color: #38bdf8;
-            }
-            .sumário {
-                display: flex;
-                gap: 16px;
-                justify-content: center;
-                margin-bottom: 32px;
-            }
-            .sumário button {
-                background: #1f2937;
-                color: #34d399;
-                border: none;
-                border-radius: 10px;
-                padding: 10px 24px;
-                font-size: 1em;
-                cursor: pointer;
-                transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-                font-weight: bold;
-                box-shadow: 0 2px 10px rgba(52,211,153,0.08);
-            }
-            .sumário button:hover {
-                background: #0e7490;
-                color: #fff;
-                box-shadow: 0 6px 24px rgba(52,211,153,0.15);
-            }
-            .sumário button.selected {
-                background: #34d399;
-                color: #111827;
-                box-shadow: 0 2px 8px rgba(52,211,153,0.18);
-            }
-            .sumário button:disabled {
-                background: #243047;
-                color: #888;
-                cursor: not-allowed;
-                opacity: 0.7;
-            }
-            /* TDE1 box styling */
-            .tde1_content {
-                margin-top: 24px;
-                background: #192436;
-                border-radius: 18px;
-                box-shadow: 0 2px 16px rgba(52,211,153,0.09);
-                padding: 28px 32px;
-                color: #d6e8fa;
-                display: none;
-            }
-            .tde1_title {
-                padding: 12px 18px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #34d399;
-                font-size: 2em;
-                margin-top:  10px;
-                margin-bottom: 10px;
-                background-color: #134e4a;
-                border-radius: 8px;
-                transition: background-color 0.3s, color 0.3s;
-                font-weight: bold;
-            }
-            .tde1_title:hover{
-                background-color: #0e7490;
-                color: #fff;
-                box-shadow: 0 4px 16px rgba(52,211,153,0.16);
-            }
-            .tde1_Introdução, .tde1_Desenvolvimento, .tde_1Conclusão, .tde1_Referências {
-                color: #38bdf8;
-                margin-top: 22px;
-                margin-bottom: 8px;
-            }
-            .tde1_content h3 {
-                color: #34d399;
-                margin-top: 18px;
-                margin-bottom: 6px;
-            }
-            .tde1_content p {
-                line-height: 1.7;
-                margin-bottom: 10px;
-            }
-            .tde1_content a {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                color: #38bdf8;
-                text-decoration: none;
-                margin-bottom: 8px;
-                background: #111827;
-                border: none;
-                border-radius: 6px;
-                padding: 8px 18px;
-                margin: 4px 4px 0 0;
-                cursor: pointer;
-                font-size: 0.98em;
-                transition: background 0.2s;
-            }
-            .tde1_content a:hover {
-                background: #134e4a;
-            }
-            .conclusion_tde1{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-                gap: 20px;
-            }
-            /* TDE2 content will use Tailwind for full layout and color */
-            .tde2_content {
-                display: none;
-                margin-top: 24px;
-}
+               margin: 0;
+               font-family: 'Space Mono', monospace;
+               background-color: #0d1117;
+               color: #f0f4f8;
+               overflow-x: hidden;
+               position: relative;
+           }
+
+           body::before {
+               content: '';
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: radial-gradient(circle, rgba(29, 78, 216, 0.1) 0%, transparent 70%),
+                   linear-gradient(135deg, rgba(14, 116, 144, 0.1) 0%, rgba(17, 24, 39, 0) 50%);
+               z-index: -1;
+               opacity: 0.5;
+               animation: pulse-bg 15s infinite ease-in-out;
+           }
+
+           @keyframes pulse-bg {
+               0% {
+                   transform: scale(1);
+               }
+
+               50% {
+                   transform: scale(1.1);
+               }
+
+               100% {
+                   transform: scale(1);
+               }
+           }
+
+           .container-infographic {
+               max-width: 1200px;
+               background-color: #111827;
+               border: 1px solid #1f2937;
+               transition: all 0.3s ease-in-out;
+           }
+
+           .container-infographic:hover {
+               box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+           }
+
+           .icon-container {
+               position: relative;
+               z-index: 10;
+           }
+
+           .icon {
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+               background-color: #2e3a4e;
+               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+               animation: float 6s ease-in-out infinite;
+           }
+
+           @keyframes float {
+               0% {
+                   transform: translateY(0px);
+               }
+
+               50% {
+                   transform: translateY(-10px);
+               }
+
+               100% {
+                   transform: translateY(0px);
+               }
+           }
+
+           .animated-text {
+               animation: fadeIn 2s ease-in-out;
+           }
+
+           @keyframes fadeIn {
+               from {
+                   opacity: 0;
+                   transform: translateY(10px);
+               }
+
+               to {
+                   opacity: 1;
+                   transform: translateY(0);
+               }
+           }
+
+           .section-hover:hover {
+               transform: scale(1.03);
+               box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+           }
+
+           .tech-divider {
+               height: 2px;
+               background: linear-gradient(90deg, #1f2937 0%, #34d399 50%, #1f2937 100%);
+               border-radius: 9999px;
+               animation: tech-pulse 3s infinite;
+           }
+
+           @keyframes tech-pulse {
+               0% {
+                   opacity: 0.5;
+               }
+
+               50% {
+                   opacity: 1;
+               }
+
+               100% {
+                   opacity: 0.5;
+               }
+           }
+
+           /* Custom styles for first TDE content box */
+           .all_content {
+               max-width: 1200px;
+               margin: 40px auto;
+               background: #111827;
+               border-radius: 24px;
+               box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+               padding: 32px 40px;
+               border: 1px solid #222b3f;
+           }
+
+           .Titulo {
+               text-align: center;
+               font-size: 2.2em;
+               margin-bottom: 18px;
+               color: #34d399;
+               letter-spacing: 2px;
+               font-weight: bold;
+           }
+
+           .info {
+               background: linear-gradient(90deg, #172335 0%, #0f172a 40%, #172335 100%);
+               border-radius: 16px;
+               padding: 18px 24px;
+               margin-bottom: 28px;
+               color: #e0eafc;
+               box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+           }
+
+           .alunos h3 {
+               margin: 6px 0;
+               font-weight: 400;
+               color: #38bdf8;
+           }
+
+           .sumário {
+               display: flex;
+               gap: 16px;
+               justify-content: center;
+               margin-bottom: 32px;
+           }
+
+           .sumário button {
+               background: #1f2937;
+               color: #34d399;
+               border: none;
+               border-radius: 10px;
+               padding: 10px 24px;
+               font-size: 1em;
+               cursor: pointer;
+               transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+               font-weight: bold;
+               box-shadow: 0 2px 10px rgba(52, 211, 153, 0.08);
+           }
+
+           .sumário button:hover {
+               background: #0e7490;
+               color: #fff;
+               box-shadow: 0 6px 24px rgba(52, 211, 153, 0.15);
+           }
+
+           .sumário button.selected {
+               background: #34d399;
+               color: #111827;
+               box-shadow: 0 2px 8px rgba(52, 211, 153, 0.18);
+           }
+
+           .sumário button:disabled {
+               background: #243047;
+               color: #888;
+               cursor: not-allowed;
+               opacity: 0.7;
+           }
+
+           /* TDE1 box styling */
+           .tde1_content {
+               margin-top: 24px;
+               background: #192436;
+               border-radius: 18px;
+               box-shadow: 0 2px 16px rgba(52, 211, 153, 0.09);
+               padding: 28px 32px;
+               color: #d6e8fa;
+               display: none;
+           }
+
+           .tde1_title {
+               padding: 12px 18px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: #34d399;
+               font-size: 2em;
+               margin-top: 10px;
+               margin-bottom: 10px;
+               background-color: #134e4a;
+               border-radius: 8px;
+               transition: background-color 0.3s, color 0.3s;
+               font-weight: bold;
+           }
+
+           .tde1_title:hover {
+               background-color: #0e7490;
+               color: #fff;
+               box-shadow: 0 4px 16px rgba(52, 211, 153, 0.16);
+           }
+
+           .tde1_Introdução,
+           .tde1_Desenvolvimento,
+           .tde_1Conclusão,
+           .tde1_Referências {
+               color: #38bdf8;
+               margin-top: 22px;
+               margin-bottom: 8px;
+           }
+
+           .tde1_content h3 {
+               color: #34d399;
+               margin-top: 18px;
+               margin-bottom: 6px;
+           }
+
+           .tde1_content p {
+               line-height: 1.7;
+               margin-bottom: 10px;
+           }
+
+           .tde1_content a {
+               display: flex;
+               align-items: center;
+               gap: 8px;
+               color: #38bdf8;
+               text-decoration: none;
+               margin-bottom: 8px;
+               background: #111827;
+               border: none;
+               border-radius: 6px;
+               padding: 8px 18px;
+               margin: 4px 4px 0 0;
+               cursor: pointer;
+               font-size: 0.98em;
+               transition: background 0.2s;
+           }
+
+           .tde1_content a:hover {
+               background: #134e4a;
+           }
+
+           .conclusion_tde1 {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: row;
+               gap: 20px;
+           }
+
+           /* TDE2 content will use Tailwind for full layout and color */
+           .tde2_content {
+               display: none;
+               margin-top: 24px;
+           }
+
+           .tde4_content {
+               margin-top: 24px;
+               background: #192436;
+               border-radius: 18px;
+               box-shadow: 0 2px 16px rgba(52, 211, 153, 0.09);
+               padding: 28px 32px;
+               color: #d6e8fa;
+               display: none;
+               animation: fadeIn 0.6s ease-in-out;
+           }
+
+           .tde4_title {
+               padding: 12px 18px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: #34d399;
+               font-size: 2em;
+               margin-top: 10px;
+               margin-bottom: 22px;
+               background-color: #134e4a;
+               border-radius: 8px;
+               transition: background-color 0.3s, color 0.3s;
+               font-weight: bold;
+           }
+
+           .tde4_title:hover {
+               background-color: #0e7490;
+               color: #fff;
+               box-shadow: 0 4px 16px rgba(52, 211, 153, 0.16);
+           }
+
+           .tde4_introducao,
+           .tde4_metodologia,
+           .tde4_analise,
+           .tde4_conclusao,
+           .tde4_referencias {
+               color: #38bdf8;
+               margin-top: 22px;
+               margin-bottom: 12px;
+               font-size: 1.4em;
+           }
+
+           .tde4_content p {
+               line-height: 1.7;
+               margin-bottom: 12px;
+               color: #e2ebf6;
+           }
+
+           .tde4_subtitulo {
+               color: #34d399;
+               margin-top: 18px;
+               margin-bottom: 6px;
+               font-size: 1.2em;
+           }
+
+           /* Botão do TDE4 no sumário */
+           .tde4_botao {
+               background: #1f2937;
+               color: #34d399;
+               border: none;
+               border-radius: 10px;
+               padding: 10px 24px;
+               font-size: 1em;
+               cursor: pointer;
+               transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+               font-weight: bold;
+               box-shadow: 0 2px 10px rgba(52, 211, 153, 0.08);
+           }
+
+           .tde4_botao:hover {
+               background: #0e7490;
+               color: #fff;
+               box-shadow: 0 6px 24px rgba(52, 211, 153, 0.15);
+           }
+
+           .tde4_botao.selected {
+               background: #34d399;
+               color: #111827;
+               box-shadow: 0 2px 8px rgba(52, 211, 153, 0.18);
+           }
+
+           /* Animação usada no conteúdo */
+           @keyframes fadeIn {
+               from {
+                   opacity: 0;
+                   transform: translateY(10px);
+               }
+
+               to {
+                   opacity: 1;
+                   transform: translateY(0);
+               }
+           }
