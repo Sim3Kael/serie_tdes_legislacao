@@ -293,11 +293,11 @@
                display: flex;
                justify-content: center;
                align-items: center;
-               color: #34d399;
+               color: #ffffff;
                font-size: 2em;
                margin-top: 10px;
                margin-bottom: 22px;
-               background-color: #134e4a;
+               background-color: #560063;
                border-radius: 8px;
                transition: background-color 0.3s, color 0.3s;
                font-weight: bold;
@@ -327,7 +327,7 @@
            }
 
            .tde4_subtitulo {
-               color: #34d399;
+               color: #ffffff;
                margin-top: 18px;
                margin-bottom: 6px;
                font-size: 1.2em;
